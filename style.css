@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+#home-page {
+    background: url("images/Untitled\ design\ \(1\).jpg")  no-repeat center center/cover;
+    /* background: linear-gradient(224deg, #15b422, #000000); */
+    height: 100vh;
+}
+
+.home-content-text {
+    margin-top: 150px;
+    margin-left: 7%;
+}
+
+.brand-name {
+    font-size: 5rem;
+    font-family: 'Mate SC', serif;
+    color: #fff;
+    text-decoration: underline #fff116;
+}
+
+.row {
+    margin-top: 60px;
+}
+
+
+.song-list-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 10px;
+}
+
+.album-poster {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    box-shadow: 0 15px 35px #3d2173a3;
+    transition: all ease 0.4s;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 35px;
+    background-color: #080429;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 )
+}
+
+.album-poster:hover {
+    box-shadow: none;
+    transform: scale(0.98) translateY(5px);
+}
+
+.album-container h4,p{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.song-images {
+    width: 200px;
+    height: 150px;
+}
+
+
+/* navbar customization */
+.fa-headphones {
+    color: #080429;
+}
+.site-logo-name {
+    font-size: 2rem;
+    font-family: 'Mate SC', serif;
+}
+
+.nav-link {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.nav-item:hover {
+    text-decoration: underline #fff116;
+}
+
+.home-text {
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+/* features section */
+#features {
+	padding: 7% 15%;
+}
+
+.feature-title {
+	font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.feature-box {
+	padding: 5%;
+    text-align: center;
+}
+
+.icons {
+	color: #080429;
+	margin-bottom: 1rem;
+}
+
+.icons:hover {
+	color: #fff116;
+}
+
+.free-banner {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 10% 15%;
+    background-color: #080429;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+/* Default is hide music player */
+#aplayer {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    box-shadow: 0 -2px -2px #dadada;
+    background-color: #ffffff;
+    transition: all ease 0.5s;
+    border-radius: 10px;
+    }
+
+#aplayer.showPlayer {
+    bottom: 0;
+}
+
+
+/* Music player customization */
+span {
+    color: #300 !important;
+    font-size: 16px;
+}
+
+.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar a.player-loaded{
+    background: #e0e0e0;
+    height: 4px;
+}
+
+.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar a.player-played{
+    background: #2196F3 !important;
+    height: 4px;
+}
+
+.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar a.player-played aplayer-thumb{
+    background: #2196F3 !important;
+}
+
+#footer-page {
+    color: white;
+    background-color: #080429;
+    text-align: center;
+}
+
+.footer-content {
+	padding: 8% 15% 6% 15%;
+}
+
+.social-icons {
+	margin: 2% 2% 5% 2%;
+    color: white
+}
+
+.social-icons:hover {
+    color: #fff116;
+}
+
+@media only screen and (max-width: 700px) {
+    .song-images {
+        width: 150px;
+        height: 150px;
+    }
+    .free-banner h1 {
+        font-size: 1rem;
+    }
+    .song-list-heading {
+        font-size: 1.2rem;
+    }
+    .album-container h4 {
+        font-size: 0.9rem;
+    }
+    .album-container p {
+        font-size: 0.6rem;
+    }
+    .album-poster {
+        padding-top: 7%;
+        padding-bottom: 7%;
+    }
+    .feature-title {
+        font-size: 1.2rem;
+    }
+    .feature-box p {
+        font-size: 0.8rem;
+    }
+    .brand-name {
+        font-size: 4rem;
+    }
+    .home-text {
+        font-size: 1.7rem;
+    }
+    .footer-content p {
+        font-size: 0.5rem;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .song-images {
+        width: 100px;
+        height: 100px;
+    }
+    .free-banner h1 {
+        font-size: 1rem;
+    }
+    .song-list-heading {
+        font-size: 1.2rem;
+    }
+    .album-container h4 {
+        font-size: 0.9rem;
+    }
+    .album-container p {
+        font-size: 0.6rem;
+    }
+    .album-poster {
+        padding-top: 7%;
+        padding-bottom: 7%;
+    }
+    .feature-title {
+        font-size: 1.2rem;
+    }
+    .feature-box p {
+        font-size: 0.8rem;
+    }
+    .brand-name {
+        font-size: 3rem;
+    }
+    .home-text {
+        font-size: 1.7rem;
+    }
+    .footer-content p {
+        font-size: 0.5rem;
+    }
+  }
